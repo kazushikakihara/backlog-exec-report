@@ -23,7 +23,7 @@
       <thead><tr><th>Project</th><th>Open</th><th>Closed</th><th>New (window)</th><th>Overdue</th></tr></thead>
       <tbody>
       <tr th:each="r: ${data.rows}">
-        <td th:text="${r.projectKey + ' - ' + r.projectName}"></td>
+        <td th:text="${#strings.concat(r.projectKey, ' - ', r.projectName)}"></td>
         <td th:text="${r.openTotal}"></td>
         <td th:text="${r.closedTotal}"></td>
         <td th:text="${r.createdInWindow}"></td>
