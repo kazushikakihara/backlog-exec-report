@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+backlog:
+  host: ${BACKLOG_SPACE_HOST}
+  apiKey: ${BACKLOG_API_KEY}
+  closedStatusNames: ${CLOSED_STATUS_NAMES:Closed,Resolved}
